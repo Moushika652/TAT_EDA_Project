@@ -1,0 +1,747 @@
+{
+ "raw_shape": [
+  4000,
+  4
+ ],
+ "raw_missing": 0,
+ "raw_dup_rows": 0,
+ "raw_dup_ts": 0,
+ "devices": {
+  "MacBookPro1": {
+   "start": "2020-11-26 14:47:38",
+   "end": "2020-11-26 15:06:10",
+   "n": 1000
+  },
+  "MacBookPro2": {
+   "start": "2020-11-26 13:05:57",
+   "end": "2020-11-26 13:30:19",
+   "n": 1000
+  },
+  "RasberryPi": {
+   "start": "2020-11-26 16:29:03",
+   "end": "2020-11-26 17:03:12",
+   "n": 1000
+  },
+  "VM": {
+   "start": "2020-11-26 15:16:31",
+   "end": "2020-11-26 15:40:21",
+   "n": 1000
+  }
+ },
+ "outliers": {
+  "MacBookPro1": {
+   "sum": 9,
+   "mean": 0.009
+  },
+  "MacBookPro2": {
+   "sum": 23,
+   "mean": 0.023
+  },
+  "RasberryPi": {
+   "sum": 42,
+   "mean": 0.042
+  },
+  "VM": {
+   "sum": 70,
+   "mean": 0.07
+  }
+ },
+ "raw_stats": {
+  "MacBookPro1": {
+   "count": 1000,
+   "mean": 0.1082,
+   "std": 0.0076,
+   "min": 0.0929,
+   "median": 0.1074,
+   "max": 0.2264
+  },
+  "MacBookPro2": {
+   "count": 1000,
+   "mean": 0.3483,
+   "std": 0.0923,
+   "min": 0.2686,
+   "median": 0.307,
+   "max": 1.6072
+  },
+  "RasberryPi": {
+   "count": 1000,
+   "mean": 1.0169,
+   "std": 0.1292,
+   "min": 0.8512,
+   "median": 1.0175,
+   "max": 3.1679
+  },
+  "VM": {
+   "count": 1000,
+   "mean": 0.4268,
+   "std": 0.6466,
+   "min": 0.1669,
+   "median": 0.4118,
+   "max": 20.7894
+  }
+ },
+ "skew_kurt": {
+  "MacBookPro1": {
+   "skew": 7.207088305474045,
+   "kurt": 104.9723367085499
+  },
+  "MacBookPro2": {
+   "skew": 5.429855541457593,
+   "kurt": 53.103877690330684
+  },
+  "RasberryPi": {
+   "skew": 7.2074503912684555,
+   "kurt": 94.47371202615547
+  },
+  "VM": {
+   "skew": 31.273148402176727,
+   "kurt": 982.3450186669513
+  }
+ },
+ "clean_shape": [
+  3980,
+  22
+ ],
+ "thresholds": {
+  "MacBookPro1": 0.1148,
+  "MacBookPro2": 0.4084,
+  "RasberryPi": 1.1188,
+  "VM": 0.4415
+ },
+ "split_counts": {
+  "test": 600,
+  "train": 2784,
+  "val": 596
+ },
+ "slow_rate": {
+  "test": 0.175,
+  "train": 0.1006,
+  "val": 0.1376
+ },
+ "n_fields": 24,
+ "corr_tat": {
+  "gap_s": 0.601,
+  "prev_gap": 0.572,
+  "lag1": 0.903,
+  "lag2": 0.896,
+  "lag3": 0.897,
+  "diff1": 0.01,
+  "roll_mean5": 0.91,
+  "roll_std5": 0.675,
+  "roll_max5": 0.886,
+  "roll_mean20": 0.907,
+  "lag1_ratio": 0.022,
+  "task_index": 0.051
+ },
+ "lag1_spearman": {
+  "MacBookPro1": 0.048,
+  "MacBookPro2": 0.181,
+  "VM": 0.096,
+  "RasberryPi": 0.052
+ },
+ "fit": [
+  {
+   "device": "MacBookPro1",
+   "dist": "norm",
+   "aic": -7513.3513,
+   "ks_stat": 0.0452,
+   "ks_p": 0.0348
+  },
+  {
+   "device": "MacBookPro1",
+   "dist": "lognorm",
+   "aic": -7525.9827,
+   "ks_stat": 0.041,
+   "ks_p": 0.0708
+  },
+  {
+   "device": "MacBookPro1",
+   "dist": "gamma",
+   "aic": -7522.4262,
+   "ks_stat": 0.0425,
+   "ks_p": 0.0557
+  },
+  {
+   "device": "MacBookPro2",
+   "dist": "norm",
+   "aic": -2627.1429,
+   "ks_stat": 0.2604,
+   "ks_p": 0.0
+  },
+  {
+   "device": "MacBookPro2",
+   "dist": "lognorm",
+   "aic": -2842.0712,
+   "ks_stat": 0.2551,
+   "ks_p": 0.0
+  },
+  {
+   "device": "MacBookPro2",
+   "dist": "gamma",
+   "aic": -2778.7898,
+   "ks_stat": 0.2578,
+   "ks_p": 0.0
+  },
+  {
+   "device": "VM",
+   "dist": "norm",
+   "aic": -3336.8678,
+   "ks_stat": 0.2207,
+   "ks_p": 0.0
+  },
+  {
+   "device": "VM",
+   "dist": "lognorm",
+   "aic": -2787.8133,
+   "ks_stat": 0.2773,
+   "ks_p": 0.0
+  },
+  {
+   "device": "VM",
+   "dist": "gamma",
+   "aic": -2982.4871,
+   "ks_stat": 0.2599,
+   "ks_p": 0.0
+  },
+  {
+   "device": "RasberryPi",
+   "dist": "norm",
+   "aic": -2142.2997,
+   "ks_stat": 0.1303,
+   "ks_p": 0.0
+  },
+  {
+   "device": "RasberryPi",
+   "dist": "lognorm",
+   "aic": -2208.0146,
+   "ks_stat": 0.1136,
+   "ks_p": 0.0
+  },
+  {
+   "device": "RasberryPi",
+   "dist": "gamma",
+   "aic": -2188.65,
+   "ks_stat": 0.1191,
+   "ks_p": 0.0
+  }
+ ],
+ "best_fit": {
+  "MacBookPro1": "lognorm",
+  "MacBookPro2": "lognorm",
+  "RasberryPi": "lognorm",
+  "VM": "norm"
+ },
+ "discrete": {
+  "blocks": 76,
+  "p_hat": 0.034736842105263156,
+  "lam": 1.736842105263158,
+  "var": 7.129824561403511,
+  "dispersion": 4.105050505050507
+ },
+ "gap_dist": {
+  "1": 2022,
+  "2": 1889,
+  "3": 64,
+  "4": 3,
+  "5": 1,
+  "22": 1
+ },
+ "kruskal": {
+  "H": 3500.197401196671,
+  "p": 0.0
+ },
+ "levene": {
+  "W": 85.95675110824538,
+  "p": 6.93276059199965e-54
+ },
+ "gap_vs_slow": {
+  "mean_prev_gap_slow": 1.511777301927195,
+  "mean_prev_gap_normal": 1.515798462852263,
+  "mw_p": 0.8636165144654149
+ },
+ "chi2_prev_outlier": {
+  "table": [
+   [
+    3735,
+    103
+   ],
+   [
+    104,
+    34
+   ]
+  ],
+  "p": 1.9025900241120586e-42
+ },
+ "ci": {
+  "MacBookPro1": [
+   0.10768756198574496,
+   0.1086386517359089
+  ],
+  "MacBookPro2": [
+   0.342664459987771,
+   0.3541661155622508
+  ],
+  "VM": [
+   0.38760971685664936,
+   0.46824068545780995
+  ],
+  "RasberryPi": [
+   1.0082067949104163,
+   1.021895151340461
+  ]
+ },
+ "log_mean_sd": {
+  "MacBookPro1": [
+   -2.2261294874035826,
+   0.0608232039524934
+  ],
+  "MacBookPro2": [
+   -1.0772806644505475,
+   0.1976141794819536
+  ],
+  "VM": [
+   -0.9035641864856047,
+   0.19611307049880167
+  ],
+  "RasberryPi": [
+   0.01012685718407298,
+   0.09417418075829576
+  ]
+ },
+ "n_model_features": 15,
+ "feature_names": [
+  "prev_gap",
+  "lag1",
+  "lag2",
+  "lag3",
+  "diff1",
+  "roll_mean5",
+  "roll_std5",
+  "roll_max5",
+  "roll_mean20",
+  "lag1_ratio",
+  "second",
+  "dev_MacBookPro1",
+  "dev_MacBookPro2",
+  "dev_RasberryPi",
+  "dev_VM"
+ ],
+ "grid_reg": [
+  {
+   "hidden": "(16,)",
+   "lr": 0.01,
+   "alpha": 0.0001,
+   "epochs": 37,
+   "val_mse_log": 0.01491,
+   "val_mae_s": 0.03785
+  },
+  {
+   "hidden": "(16,)",
+   "lr": 0.01,
+   "alpha": 0.01,
+   "epochs": 37,
+   "val_mse_log": 0.01503,
+   "val_mae_s": 0.0384
+  },
+  {
+   "hidden": "(64, 32, 16)",
+   "lr": 0.01,
+   "alpha": 0.01,
+   "epochs": 15,
+   "val_mse_log": 0.01527,
+   "val_mae_s": 0.04062
+  },
+  {
+   "hidden": "(32, 16)",
+   "lr": 0.01,
+   "alpha": 0.0001,
+   "epochs": 41,
+   "val_mse_log": 0.01552,
+   "val_mae_s": 0.0378
+  },
+  {
+   "hidden": "(64, 32, 16)",
+   "lr": 0.01,
+   "alpha": 0.0001,
+   "epochs": 17,
+   "val_mse_log": 0.01567,
+   "val_mae_s": 0.04027
+  },
+  {
+   "hidden": "(64, 32, 16)",
+   "lr": 0.001,
+   "alpha": 0.0001,
+   "epochs": 38,
+   "val_mse_log": 0.01574,
+   "val_mae_s": 0.03959
+  },
+  {
+   "hidden": "(32, 16)",
+   "lr": 0.01,
+   "alpha": 0.01,
+   "epochs": 28,
+   "val_mse_log": 0.01637,
+   "val_mae_s": 0.03795
+  },
+  {
+   "hidden": "(64, 32, 16)",
+   "lr": 0.001,
+   "alpha": 0.01,
+   "epochs": 24,
+   "val_mse_log": 0.0165,
+   "val_mae_s": 0.03988
+  },
+  {
+   "hidden": "(32, 16)",
+   "lr": 0.001,
+   "alpha": 0.0001,
+   "epochs": 80,
+   "val_mse_log": 0.01656,
+   "val_mae_s": 0.03829
+  },
+  {
+   "hidden": "(16,)",
+   "lr": 0.001,
+   "alpha": 0.01,
+   "epochs": 80,
+   "val_mse_log": 0.01741,
+   "val_mae_s": 0.04031
+  },
+  {
+   "hidden": "(16,)",
+   "lr": 0.001,
+   "alpha": 0.0001,
+   "epochs": 80,
+   "val_mse_log": 0.01759,
+   "val_mae_s": 0.04048
+  },
+  {
+   "hidden": "(32, 16)",
+   "lr": 0.001,
+   "alpha": 0.01,
+   "epochs": 55,
+   "val_mse_log": 0.01767,
+   "val_mae_s": 0.0384
+  }
+ ],
+ "best_hp_reg": {
+  "hidden": [
+   16
+  ],
+  "lr": 0.01,
+  "alpha": 0.0001,
+  "epochs_run": 37,
+  "best_epoch": 25
+ },
+ "n_params_reg": 273,
+ "reg_metrics": {
+  "Device median (train)": {
+   "mae": 0.047179861068725584,
+   "rmse": 0.10614679191071903,
+   "medae": 0.013568341732025167,
+   "r2_log": 0.9413784213170956,
+   "r2": 0.8985970346652079,
+   "within_device_r2_log": -0.2478906730595456
+  },
+  "Persistence (previous TAT)": {
+   "mae": 0.05944683035214742,
+   "rmse": 0.12947225059445772,
+   "medae": 0.01837599277496335,
+   "r2_log": 0.9321418210465826,
+   "r2": 0.849134372302295,
+   "within_device_r2_log": -0.9841463601939796
+  },
+  "Rolling mean (last 5)": {
+   "mae": 0.04725810233751933,
+   "rmse": 0.09744818764783465,
+   "medae": 0.020174574851989785,
+   "r2_log": 0.9577916394079983,
+   "r2": 0.9145357585538239,
+   "within_device_r2_log": -0.26141699754009895
+  },
+  "Ridge regression": {
+   "mae": 0.04479523594180742,
+   "rmse": 0.0978814740029331,
+   "medae": 0.020757600665092468,
+   "r2_log": 0.9597459529300232,
+   "r2": 0.9137740652813828,
+   "within_device_r2_log": -0.1728231674493197
+  },
+  "MLP (proposed)": {
+   "mae": 0.0458111734688282,
+   "rmse": 0.09945971273189376,
+   "medae": 0.023066297173500033,
+   "r2_log": 0.9581634507720466,
+   "r2": 0.9109710378920873,
+   "within_device_r2_log": -0.22880154285811133
+  }
+ },
+ "reg_per_device_mae": {
+  "MacBookPro1": 0.004838938117027292,
+  "MacBookPro2": 0.09777916073799134,
+  "VM": 0.020682209332784016,
+  "RasberryPi": 0.05994438568751017
+ },
+ "reg_per_device_mean": {
+  "MacBookPro1": 0.10865089257558182,
+  "MacBookPro2": 0.4119621165593465,
+  "VM": 0.4144872840245565,
+  "RasberryPi": 0.9940622727076213
+ },
+ "reg_per_device_rel": {
+  "MacBookPro1": 0.03664895216666535,
+  "MacBookPro2": 0.1598803164984149,
+  "VM": 0.038938650671221056,
+  "RasberryPi": 0.06032629410644523
+ },
+ "res_stats": {
+  "mean": 0.0077683746318022205,
+  "median": -0.0002291649580001831,
+  "std": 0.09915587129510184,
+  "p5": -0.08989375233650207,
+  "p95": 0.09731090515851971
+ },
+ "importance_reg": [
+  {
+   "feature": "lag1",
+   "imp": 0.2169,
+   "sd": 0.007
+  },
+  {
+   "feature": "roll_max5",
+   "imp": 0.1819,
+   "sd": 0.0054
+  },
+  {
+   "feature": "lag2",
+   "imp": 0.1604,
+   "sd": 0.0058
+  },
+  {
+   "feature": "roll_mean5",
+   "imp": 0.1479,
+   "sd": 0.005
+  },
+  {
+   "feature": "dev_VM",
+   "imp": 0.145,
+   "sd": 0.0064
+  },
+  {
+   "feature": "dev_MacBookPro2",
+   "imp": 0.1193,
+   "sd": 0.0032
+  },
+  {
+   "feature": "lag3",
+   "imp": 0.0765,
+   "sd": 0.0034
+  },
+  {
+   "feature": "dev_MacBookPro1",
+   "imp": 0.0763,
+   "sd": 0.0032
+  }
+ ],
+ "ablation_mae": {
+  "Device identity only": 0.04566161036491394,
+  "History features only (no device)": 0.0887915241966645,
+  "All features": 0.04479486312717198
+ },
+ "grid": [
+  {
+   "hidden": "(16,)",
+   "lr": 0.01,
+   "alpha": 0.0001,
+   "epochs": 22,
+   "val_loss": 0.4008,
+   "val_auc": 0.5537
+  },
+  {
+   "hidden": "(16,)",
+   "lr": 0.01,
+   "alpha": 0.01,
+   "epochs": 22,
+   "val_loss": 0.4013,
+   "val_auc": 0.5471
+  },
+  {
+   "hidden": "(32, 16)",
+   "lr": 0.01,
+   "alpha": 0.0001,
+   "epochs": 17,
+   "val_loss": 0.4044,
+   "val_auc": 0.5241
+  },
+  {
+   "hidden": "(32, 16)",
+   "lr": 0.01,
+   "alpha": 0.01,
+   "epochs": 14,
+   "val_loss": 0.4058,
+   "val_auc": 0.5182
+  },
+  {
+   "hidden": "(64, 32, 16)",
+   "lr": 0.01,
+   "alpha": 0.01,
+   "epochs": 17,
+   "val_loss": 0.4035,
+   "val_auc": 0.5165
+  },
+  {
+   "hidden": "(64, 32, 16)",
+   "lr": 0.01,
+   "alpha": 0.0001,
+   "epochs": 17,
+   "val_loss": 0.4046,
+   "val_auc": 0.5139
+  },
+  {
+   "hidden": "(16,)",
+   "lr": 0.001,
+   "alpha": 0.0001,
+   "epochs": 46,
+   "val_loss": 0.4084,
+   "val_auc": 0.5033
+  },
+  {
+   "hidden": "(16,)",
+   "lr": 0.001,
+   "alpha": 0.01,
+   "epochs": 46,
+   "val_loss": 0.4083,
+   "val_auc": 0.5021
+  },
+  {
+   "hidden": "(64, 32, 16)",
+   "lr": 0.001,
+   "alpha": 0.0001,
+   "epochs": 16,
+   "val_loss": 0.407,
+   "val_auc": 0.5009
+  },
+  {
+   "hidden": "(32, 16)",
+   "lr": 0.001,
+   "alpha": 0.0001,
+   "epochs": 26,
+   "val_loss": 0.4092,
+   "val_auc": 0.5005
+  },
+  {
+   "hidden": "(32, 16)",
+   "lr": 0.001,
+   "alpha": 0.01,
+   "epochs": 26,
+   "val_loss": 0.4092,
+   "val_auc": 0.4994
+  },
+  {
+   "hidden": "(64, 32, 16)",
+   "lr": 0.001,
+   "alpha": 0.01,
+   "epochs": 16,
+   "val_loss": 0.4071,
+   "val_auc": 0.4985
+  }
+ ],
+ "best_hp": {
+  "hidden": [
+   16
+  ],
+  "lr": 0.01,
+  "alpha": 0.0001,
+  "epochs_run": 22,
+  "best_epoch": 10
+ },
+ "n_params": 273,
+ "thr_opt": 0.11253290623426437,
+ "metrics": {
+  "MLP": {
+   "accuracy": 0.525,
+   "precision": 0.17857142857142858,
+   "recall": 0.47619047619047616,
+   "f1": 0.2597402597402597,
+   "auc": 0.49618085618085617,
+   "ap": 0.23944474998743986
+  },
+  "Logistic Regression": {
+   "accuracy": 0.8283333333333334,
+   "precision": 1.0,
+   "recall": 0.01904761904761905,
+   "f1": 0.037383177570093455,
+   "auc": 0.5786050986050986,
+   "ap": 0.3037839780113867
+  },
+  "Random Forest": {
+   "accuracy": 0.825,
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "auc": 0.6500432900432901,
+   "ap": 0.28247317222427826
+  }
+ },
+ "majority_acc": 0.825,
+ "test_pos": 105,
+ "test_n": 600,
+ "cm": [
+  [
+   265,
+   230
+  ],
+  [
+   55,
+   50
+  ]
+ ],
+ "per_device_auc": {
+  "MacBookPro1": 0.5403776617115307,
+  "MacBookPro2": 0.4737903225806452,
+  "VM": 0.4720987654320987,
+  "RasberryPi": 0.5098502758077226
+ },
+ "importance": [
+  {
+   "feature": "dev_VM",
+   "imp": 0.0412,
+   "sd": 0.0132
+  },
+  {
+   "feature": "roll_max5",
+   "imp": 0.0283,
+   "sd": 0.0099
+  },
+  {
+   "feature": "lag2",
+   "imp": 0.0261,
+   "sd": 0.0124
+  },
+  {
+   "feature": "dev_RasberryPi",
+   "imp": 0.0257,
+   "sd": 0.0103
+  },
+  {
+   "feature": "roll_mean20",
+   "imp": 0.0168,
+   "sd": 0.01
+  },
+  {
+   "feature": "dev_MacBookPro1",
+   "imp": 0.0149,
+   "sd": 0.0109
+  },
+  {
+   "feature": "lag3",
+   "imp": 0.0146,
+   "sd": 0.0103
+  },
+  {
+   "feature": "second",
+   "imp": 0.0105,
+   "sd": 0.0124
+  }
+ ]
+}
